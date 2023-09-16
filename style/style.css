@@ -348,8 +348,8 @@ header .form i {
 }
 /* End Services */
 
-/* Start Portfolio */
-.portfolio {
+/* Start Design */
+.design {
     padding-block: var(--section-padding);
     height: 600px;
     position: relative;
@@ -361,7 +361,7 @@ header .form i {
     overflow: hidden;
 }
 
-.portfolio::before {
+.design::before {
     content: "";
     position: absolute;
     top: 0;
@@ -371,45 +371,45 @@ header .form i {
     background-color: rgba(0, 0, 0, 0.7);
 }
 
-.portfolio > * {
+.design > * {
     position: relative;
     z-index: 2;
     flex: 1;
 }
 
-.portfolio .image {
+.design .image {
     text-align: center;
 }
 
 @media (max-width: 767px) {
-    .portfolio .image {
+    .design .image {
         display: none;
     }
 }
 
-.portfolio img {
+.design img {
     position: relative;
     bottom: -150px;
 }
 
-.portfolio .text {
+.design .text {
     background-color: var(--transparent-color);
     color: whitesmoke;
     padding: 50px;
 }
 
-.portfolio h2 {
+.design h2 {
     font-size: 30px;
     font-weight: normal;
     margin-bottom: 30px;
     text-transform: uppercase;
 }
 
-.portfolio li {
+.design li {
     padding-block: 15px;
 }
 
-.portfolio li::before {
+.design li::before {
     font-family: "Font Awesome 5 Free";
     content: "\f108";
     font-weight: 900;
@@ -417,4 +417,4 @@ header .form i {
     position: relative;
     top: 1px;
 }
-/* End Portfolio */
+/* End Design */
