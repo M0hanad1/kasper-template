@@ -353,7 +353,7 @@ header .form i {
     padding-block: var(--section-padding);
     height: 600px;
     position: relative;
-    background-image: url(../images/portfolio-features.jpg);
+    background-image: url(../images/design-features.jpg);
     background-size: cover;
     background-position: center;
     display: flex;
@@ -378,7 +378,6 @@ header .form i {
 }
 
 .portfolio .image {
-    text-align: center;
     text-align: center;
 }
 
