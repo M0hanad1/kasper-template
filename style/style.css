@@ -1,7 +1,7 @@
 /* Start Global Rules */
 :root {
     --main-color: #19c8fa;
-    --transparent-color: rgba(15, 116, 143, 0.7);
+    --transparent-color: rgba(15, 116, 143, 0.5);
     --section-padding: 100px;
 }
 
@@ -207,6 +207,7 @@ header .form i {
     min-height: 100dvh;
     background-color: #1f2021; /* if background-image didn't load */
     background-image: url(../images/landing.jpg);
+    background-position: center;
     background-size: cover;
     position: relative;
 }
@@ -248,9 +249,9 @@ header .form i {
 }
 
 .landing h2 {
-    font-size: 35px;
+    font-size: 30px;
     font-weight: normal;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .landing p {
@@ -346,3 +347,75 @@ header .form i {
     color: #777;
 }
 /* End Services */
+
+/* Start Portfolio */
+.portfolio {
+    padding-block: var(--section-padding);
+    height: 600px;
+    position: relative;
+    background-image: url(../images/portfolio-features.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.portfolio::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.portfolio > * {
+    position: relative;
+    z-index: 2;
+    flex: 1;
+}
+
+.portfolio .image {
+    text-align: center;
+    text-align: center;
+}
+
+@media (max-width: 767px) {
+    .portfolio .image {
+        display: none;
+    }
+}
+
+.portfolio img {
+    position: relative;
+    bottom: -150px;
+}
+
+.portfolio .text {
+    background-color: var(--transparent-color);
+    color: whitesmoke;
+    padding: 50px;
+}
+
+.portfolio h2 {
+    font-size: 30px;
+    font-weight: normal;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.portfolio li {
+    padding-block: 15px;
+}
+
+.portfolio li::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f108";
+    font-weight: 900;
+    margin-right: 20px;
+    position: relative;
+    top: 1px;
+}
+/* End Portfolio */
