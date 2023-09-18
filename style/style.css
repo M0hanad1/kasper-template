@@ -212,7 +212,7 @@ header .form i {
 .landing {
     min-height: 100dvh;
     background-color: #1f2021; /* if background-image didn't load */
-    background-image: url(../images/landing.jpg);
+    background-image: url(../assets/landing.jpg);
     background-position: center;
     background-size: cover;
     position: relative;
@@ -369,7 +369,7 @@ header .form i {
     padding-block: var(--section-padding);
     height: 600px;
     position: relative;
-    background-image: url(../images/design-features.jpg);
+    background-image: url(../assets/design-features.jpg);
     background-size: cover;
     background-position: center;
     display: flex;
