@@ -1,4 +1,4 @@
-const statsContainer = document.querySelector(".stats");
+const beforeContainer = document.querySelector(".about");
 const statsNumbers = document.querySelectorAll(".stats h2");
 let started = false;
 
@@ -14,8 +14,9 @@ function startCount(element) {
 }
 
 window.addEventListener("scroll", () => {
-    if (this.scrollY >= statsContainer.offsetTop) {
+    if (this.scrollY >= beforeContainer.offsetTop) {
         if (!started) {
+            console.log("start");
             statsNumbers.forEach(startCount);
         }
         started = true;
