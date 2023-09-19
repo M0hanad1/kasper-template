@@ -885,3 +885,111 @@ header .form i {
     display: block;
 }
 /* Quote End */
+
+/* Start Pricing */
+.pricing {
+    padding-block: var(--section-padding);
+    text-align: center;
+}
+
+.pricing .plans {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.pricing .box {
+    background-color: #fcfcfc;
+}
+
+.pricing .box > div {
+    border-bottom: 1px solid var(--main-color);
+}
+
+.pricing .price {
+    border-top: 1px solid var(--main-color);
+    padding: 40px 20px;
+}
+
+.pricing .price h3 {
+    font-weight: normal;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.pricing .price span {
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.pricing .price span::before {
+    content: "$";
+    position: relative;
+    font-size: 25px;
+    font-weight: normal;
+    top: -40px;
+    left: 17.5px;
+    margin-right: 25px;
+}
+
+.pricing .price span::after {
+    content: "/Mo";
+    position: relative;
+    font-size: 20px;
+    right: -5px;
+}
+
+.pricing .feature p {
+    padding: 20px;
+    position: relative;
+}
+
+.pricing .feature p:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 1px;
+    background-color: var(--main-color);
+    width: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.pricing .box a {
+    display: block;
+    text-decoration: none;
+    color: var(--main-color);
+    transition: 0.3s;
+    padding: 20px;
+    border: 1px solid var(--main-color);
+    border-radius: 8px;
+    width: fit-content;
+    margin: 30px auto;
+}
+
+.pricing .box a:hover {
+    color: white;
+    background-color: var(--main-color);
+}
+
+.pricing .container > p {
+    margin-block: 50px 20px;
+    font-size: 20px;
+}
+
+.pricing .container > a {
+    display: block;
+    width: fit-content;
+    text-decoration: none;
+    color: white;
+    background-color: var(--main-color);
+    transition: 0.3s;
+    padding: 20px 30px;
+    margin-inline: auto;
+    border-radius: 8px;
+}
+
+.pricing .container > a:hover {
+    background-color: var(--hover-color);
+}
+/* End Pricing */
