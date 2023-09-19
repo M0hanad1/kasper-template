@@ -14,10 +14,7 @@ function startCount(element) {
 }
 
 window.addEventListener("scroll", () => {
-    if (
-        this.scrollY + statsContainer.clientHeight + 200 >=
-        statsContainer.offsetTop
-    ) {
+    if (this.scrollY >= statsContainer.offsetTop) {
         if (!started) {
             statsNumbers.forEach(startCount);
         }
