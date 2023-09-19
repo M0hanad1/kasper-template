@@ -1083,3 +1083,104 @@ header .form i {
     }
 }
 /* End Subscribe */
+
+/* Start Contact */
+.contact {
+    padding-block: var(--section-padding);
+}
+
+.contact .content {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 767px) {
+    .contact .content {
+        flex-direction: column;
+    }
+}
+
+.contact form {
+    flex-basis: 70%;
+}
+
+.contact input:focus,
+.contact textarea:focus {
+    outline: none;
+}
+
+.contact .main-input {
+    display: block;
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 25px;
+}
+
+.contact textarea {
+    height: 250px;
+    resize: none;
+}
+
+.contact input[type="submit"] {
+    background-color: var(--main-color);
+    color: white;
+    padding: 20px;
+    border: none;
+    border-radius: 8px;
+    text-transform: uppercase;
+    display: flex;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-left: auto;
+}
+
+.contact input[type="submit"]:hover {
+    background-color: var(--hover-color);
+}
+
+.contact .info {
+    flex-basis: 25%;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 767px) {
+    .contact .info {
+        order: -1;
+        flex-direction: row;
+        justify-content: space-around;
+        /* align-items: center; */
+        margin-bottom: 30px;
+    }
+}
+
+.contact h4 {
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.contact .info .phone {
+    display: block;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.contact .address h4 {
+    margin-top: 100px;
+}
+
+@media (max-width: 767px) {
+    .contact .address h4 {
+        margin-top: 0;
+    }
+}
+
+.contact .info address {
+    color: #777;
+    line-height: 2;
+}
+/* End Contact */
