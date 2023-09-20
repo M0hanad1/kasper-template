@@ -222,7 +222,7 @@ header input {
     position: absolute;
     z-index: 3;
     top: calc(100% - 5px);
-    left: 120%;
+    left: 150%;
     display: block;
     width: calc(100% - 22px);
     padding: 20px;

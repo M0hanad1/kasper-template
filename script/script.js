@@ -49,7 +49,7 @@ function search() {
 
     search.addEventListener("click", () => {
         if (searchInput.style.left === "11px") {
-            searchInput.style.left = "120%";
+            searchInput.style.left = "150%";
             return (searchInput.value = "");
         }
         searchInput.style.left = "11px";
@@ -61,7 +61,7 @@ function search() {
             event.target !== searchInput &&
             event.target !== search
         ) {
-            searchInput.style.left = "120%";
+            searchInput.style.left = "150%";
             searchInput.value = "";
         }
     });
