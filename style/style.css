@@ -20,7 +20,11 @@ html {
 
 body {
     font-family: "Open Sans", sans-serif;
+}
+
+.wrapper {
     overflow-x: hidden;
+    position: relative;
 }
 
 ul {
