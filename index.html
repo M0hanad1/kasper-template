@@ -25,7 +25,6 @@
                     <ul>
                         <li><a class="active" href="#">Home</a></li>
                         <li><a href="#services">Services</a></li>
-                        <li><a href="#design">Design</a></li>
                         <li><a href="#portfolio">Portfolio</a></li>
                         <li><a href="#about">About</a></li>
                         <li><a href="#pricing">Pricing</a></li>
@@ -33,6 +32,7 @@
                     </ul>
                     <div class="form">
                         <i class="fas fa-search"></i>
+                        <input type="text" name="search" placeholder="search" />
                     </div>
                 </nav>
             </div>
@@ -143,7 +143,7 @@
         <!-- End Services -->
 
         <!-- Start Design -->
-        <div class="design" id="design">
+        <div class="design">
             <div class="image">
                 <img src="./assets/mobile.png" alt="Mobile" />
             </div>
@@ -485,16 +485,6 @@
         </footer>
         <!-- End Footer -->
 
-        <!-- Get year -->
-        <script>
-            document.getElementById("year").textContent =
-                new Date().getFullYear();
-        </script>
-        <!-- Add portfolio images boxes -->
-        <script src="./script/addImages.js"></script>
-        <!-- Counter for stats -->
-        <script src="./script/counter.js"></script>
-        <!-- Toggle menu code -->
-        <script src="./script/toggle.js"></script>
+        <script src="./script/script.js"></script>
     </body>
 </html>

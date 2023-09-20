@@ -20,6 +20,7 @@ html {
 
 body {
     font-family: "Open Sans", sans-serif;
+    overflow-x: hidden;
 }
 
 ul {
@@ -139,6 +140,12 @@ header nav {
 header .toggle-menu {
     color: whitesmoke;
     font-size: 22px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+header .toggle-menu:hover {
+    color: #e5e5e5;
 }
 
 @media (min-width: 768px) {
@@ -159,6 +166,8 @@ header li a {
     transition: 0.3s;
     padding: 40px 10px;
     position: relative;
+    border-bottom: 1px solid transparent;
+    z-index: 1;
 }
 
 @media (max-width: 767px) {
@@ -170,7 +179,6 @@ header li a {
         left: 0;
         width: 100%;
         background-color: rgba(0, 0, 0, 0.9);
-        transition: 0.3s;
     }
     header li a {
         padding: 25px 15px;
@@ -180,7 +188,7 @@ header li a {
 header li a.active,
 header li a:hover {
     color: var(--main-color);
-    border-bottom: 1px solid var(--main-color);
+    border-bottom-color: var(--main-color);
 }
 
 header li a.active:hover {
@@ -192,18 +200,39 @@ header .form {
     color: whitesmoke;
     width: 40px;
     height: 30px;
-    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     margin-left: 30px;
     border-left: 1px solid white;
 }
 
 header .form i {
+    cursor: pointer;
     font-size: 20px;
     color: whitesmoke;
+    transition: 0.3s;
+}
+
+header .form i:hover {
+    color: #e5e5e5;
+}
+
+header input {
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 0;
+    z-index: 3;
+    top: calc(100% - 5px);
+    left: 120%;
+    display: block;
+    width: calc(100% - 22px);
+    padding: 20px;
+    border: 1px solid #ccc;
+    transition: 0.5s;
+    border-radius: 8px;
+}
+
+header input:focus {
+    outline: none;
 }
 /* End Header */
 
