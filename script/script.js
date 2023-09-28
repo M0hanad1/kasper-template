@@ -1,6 +1,3 @@
-// Update footer year
-document.getElementById("year").textContent = new Date().getFullYear();
-
 // Add portfolio images
 function addImages() {
     const portfolioImgs = document.querySelector(".imgs-container");
@@ -25,26 +22,26 @@ function toggle() {
 
     window.addEventListener("resize", () => {
         if (window.innerWidth >= 768) {
-            return (dropMenu.style.display = "flex");
+            return (dropMenu.style.visibility = "visible");
         }
-        dropMenu.style.display = "none";
+        dropMenu.classList.remove("show");
     });
 
     document.body.addEventListener("click", (event) => {
         if (
             toggleStyle.display !== "none" &&
-            dropMenu.style.display !== "none" &&
+            dropMenu.classList.contains("show") &&
             event.target !== toggle
         ) {
-            dropMenu.style.display = "none";
+            dropMenu.classList.remove("show");
         }
     });
 
     toggle.addEventListener("click", () => {
-        if (dropMenu.style.display === "flex") {
-            return (dropMenu.style.display = "none");
+        if (dropMenu.classList.contains("show")) {
+            return dropMenu.classList.remove("show");
         }
-        dropMenu.style.display = "flex";
+        dropMenu.classList.add("show");
     });
 }
 
@@ -105,3 +102,6 @@ addImages();
 toggle();
 search();
 counter();
+
+// Update footer year
+document.getElementById("year").textContent = new Date().getFullYear();
